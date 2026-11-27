@@ -1,15 +1,15 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+# Arquivos locais que não devem ser enviados ao repositório.
 
-# dependencies
+# Dependências
 node_modules/
 
-# Expo
+# Arquivos temporários do Expo
 .expo/
 dist/
 web-build/
 expo-env.d.ts
 
-# Native
+# Arquivos nativos e certificados
 .kotlin/
 *.orig.*
 *.jks
@@ -18,24 +18,27 @@ expo-env.d.ts
 *.key
 *.mobileprovision
 
-# Metro
+# Arquivos temporários do Metro
 .metro-health-check*
 
-# debug
+# Registros de depuração
 npm-debug.*
 yarn-debug.*
 yarn-error.*
 
-# macOS
+# Arquivos do macOS
 .DS_Store
 *.pem
 
-# local env files
+# Arquivos locais de configuração
+.env
+.env.*
+!.env.example
 .env*.local
 
-# typescript
+# Arquivos temporários do TypeScript
 *.tsbuildinfo
 
-# generated native folders
+# Pastas nativas geradas pelo Expo
 /ios
 /android
